@@ -4,48 +4,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>الجمعية الموريتانية للرياضة النسائية | AMPSF</title>
-<meta name="description" content="الموقع الرسمي للجمعية الموريتانية للرياضة النسائية AMPSF">
+
+<meta name="description" content="الموقع الرسمي للجمعية الموريتانية للرياضة النسائية في موريتانيا AMPSF.">
+<meta name="theme-color" content="#103b2b">
+
 <style>
-:root{--green:#087443;--gold:#e8b949;--dark:#10251c;--light:#f4f8f5}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Tahoma,sans-serif;color:var(--dark);background:#fff;line-height:1.8}
-header{background:var(--dark);color:white;padding:16px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;font-weight:bold}
-.logo{width:55px;height:55px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:16px}
-nav{display:flex;gap:16px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:14px}
-nav a:hover{color:var(--gold)}
-.hero{padding:75px 7%;background:linear-gradient(120deg,#10251c,#087443);color:white;text-align:center}
-.hero h1{font-size:clamp(27px,5vw,45px);line-height:1.4;margin:10px auto;max-width:850px}
-.hero p{max-width:720px;margin:18px auto;color:#e5f1e9}
-.tag{color:var(--gold);font-weight:bold;letter-spacing:2px}
-.btn{display:inline-block;background:var(--gold);color:#18271e;text-decoration:none;padding:11px 23px;border-radius:7px;font-weight:bold;margin-top:12px}
-section{padding:55px 7%}
-section:nth-of-type(even){background:var(--light)}
-h2{text-align:center;color:var(--green);font-size:28px;margin-top:0}
-.intro{text-align:center;max-width:800px;margin:0 auto 25px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:25px}
-.card{background:white;border-radius:12px;padding:22px;box-shadow:0 4px 18px #10251c10;border:1px solid #e4eee7}
-.card h3{color:var(--green);margin-top:0}
-.icon{font-size:30px}
-.person{border-top:3px solid var(--gold)}
-.note{background:#fff8e6;border-right:4px solid var(--gold);padding:12px 16px;border-radius:5px}
-.contact{text-align:center}
-footer{background:var(--dark);color:#e5eee8;text-align:center;padding:25px 12px;font-size:14px}
-.small{font-size:13px;color:#64766b}
-a{overflow-wrap:anywhere}
-@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:55px 6%}section{padding:42px 6%}}
+:root {
+  --green: #087443;
+  --dark: #103b2b;
+  --gold: #e8b949;
+  --light: #f3f8f5;
+  --white: #ffffff;
+  --text: #26382e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Tahoma, sans-serif;
+  color: var(--text);
+  line-height: 1.8;
+  background: var(--white);
+}
+
+a {
+  overflow-wrap: anywhere;
+}
+
+header {
+  background: var(--dark);
+  color: white;
+  padding: 16px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.logo {
+  width: 58px;
+  height: 58px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  padding: 82px 7%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(125deg, #10251c, #087443);
+}
+
+.hero .tag {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 15px auto;
+  font-size: clamp(29px, 5vw, 46px);
+  line-height: 1.5;
+}
+
+.hero p {
+  max-width: 740px;
+  margin: 15px auto;
+  color: #e4f1e8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 11px 25px;
+  border-radius: 7px;
+  background: var(--gold);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+section {
+  padding: 58px 7%;
+  scroll-margin-top: 20px;
+}
+
+section:nth-of-type(even) {
+  background: var(--light);
+}
+
+h2 {
+  text-align: center;
+  color: var(--green);
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.intro {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #e2ece5;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(16, 59, 43, 0.06);
+}
+
+.card h3 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card-icon {
+  font-size: 30px;
+}
+
+.person {
+  border-top: 4px solid var(--gold);
+  text-align: center;
+}
+
+.note {
+  background: #fff8e6;
+  border-right: 4px solid var(--gold);
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .card {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact .contact-detail {
+  direction: ltr;
+  unicode-bidi: embed;
+  display: inline-block;
+}
+
+.small {
+  font-size: 13px;
+  color: #66766b;
+  text-align: center;
+}
+
+footer {
+  background: var(--dark);
+  color: #e5eee8;
+  padding: 28px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+.footer-brand {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media (max-width: 650px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 10px 14px;
+  }
+
+  .hero {
+    padding: 55px 6%;
+  }
+
+  section {
+    padding: 42px 6%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="brand">
     <div class="logo">AMPSF</div>
-    <div>الجمعية الموريتانية<br>للرياضة النسائية</div>
+    <div>
+      الجمعية الموريتانية<br>
+      للرياضة النسائية
+    </div>
   </div>
-  <nav>
+
+  <nav aria-label="القائمة الرئيسية">
     <a href="#about">من نحن</a>
     <a href="#goals">أهدافنا</a>
     <a href="#office">المكتب التنفيذي</a>
@@ -56,72 +297,246 @@ a{overflow-wrap:anywhere}
 </header>
 
 <main>
+
 <div class="hero">
   <div class="tag">AMPSF · SPORT FÉMININ</div>
+
   <h1>معًا من أجل رياضة نسائية أقوى</h1>
-  <p>نعمل على تطوير الرياضة النسائية في موريتانيا، وتشجيع مشاركة المرأة، ودعم المواهب الرياضية في بيئة آمنة وشاملة.</p>
+
+  <p>
+    نعمل على تطوير الرياضة النسائية في موريتانيا،
+    وتشجيع مشاركة المرأة، ودعم المواهب الرياضية
+    في بيئة آمنة وشاملة.
+  </p>
+
+  <p dir="ltr">
+    Ensemble pour un sport féminin plus fort en Mauritanie.
+  </p>
+
   <a class="btn" href="#about">اكتشفوا جمعيتنا</a>
 </div>
 
 <section id="about">
   <h2>من نحن | Qui sommes-nous ?</h2>
-  <p class="intro">الجمعية الموريتانية للرياضة النسائية هي جمعية مدنية غير ربحية تهدف إلى النهوض بالرياضة النسائية في الجمهورية الإسلامية الموريتانية، وتعزيز حضور المرأة في مختلف الأنشطة الرياضية.</p>
-  <p class="intro">L’Association Mauritanienne pour la Promotion du Sport Féminin œuvre pour le développement du sport féminin en Mauritanie et encourage la participation des femmes aux activités sportives.</p>
+
+  <p class="intro">
+    الجمعية الموريتانية للرياضة النسائية هي جمعية مدنية
+    غير ربحية تهدف إلى النهوض بالرياضة النسائية في
+    الجمهورية الإسلامية الموريتانية، وتعزيز حضور المرأة
+    في مختلف الأنشطة الرياضية.
+  </p>
+
+  <p class="intro" dir="ltr">
+    L’Association Mauritanienne pour la Promotion du Sport
+    Féminin œuvre pour le développement du sport féminin
+    en Mauritanie et encourage la participation des femmes
+    aux activités sportives.
+  </p>
 </section>
 
 <section id="goals">
   <h2>أهدافنا | Nos objectifs</h2>
+
   <div class="cards">
-    <div class="card"><div class="icon">🏃‍♀️</div><h3>نشر الثقافة الرياضية</h3><p>التوعية بأهمية الرياضة وتشجيع النساء والفتيات على ممارستها.</p></div>
-    <div class="card"><div class="icon">🤝</div><h3>دعم المواهب</h3><p>تنظيم دورات تكوينية لدعم المواهب الرياضية النسائية وتطوير مهاراتها.</p></div>
-    <div class="card"><div class="icon">🏟️</div><h3>فضاءات رياضية</h3><p>المساهمة في إنشاء فضاءات خاصة ومناسبة لممارسة المرأة للرياضة.</p></div>
-    <div class="card"><div class="icon">🏅</div><h3>فعاليات سنوية</h3><p>تنظيم مؤتمر سنوي للرياضة النسائية وماراثون نسائي وأنشطة رياضية متنوعة.</p></div>
+    <div class="card">
+      <div class="card-icon">🏃‍♀️</div>
+      <h3>نشر الثقافة الرياضية</h3>
+      <p>
+        التوعية بأهمية الرياضة وتشجيع النساء والفتيات
+        على ممارستها.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>دعم المواهب الرياضية</h3>
+      <p>
+        تنظيم دورات تكوينية لدعم المواهب النسائية
+        وتطوير المهارات الرياضية.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🏟️</div>
+      <h3>فضاءات رياضية</h3>
+      <p>
+        العمل على إنشاء فضاءات مناسبة وخاصة
+        لممارسة المرأة للرياضة.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🏅</div>
+      <h3>الفعاليات السنوية</h3>
+      <p>
+        تنظيم مؤتمر سنوي للرياضة النسائية
+        وماراثون نسائي وأنشطة رياضية متنوعة.
+      </p>
+    </div>
   </div>
 </section>
 
 <section id="office">
   <h2>المكتب التنفيذي | Bureau exécutif</h2>
-  <p class="intro">قيادة تعمل من أجل تطوير الرياضة النسائية في موريتانيا.</p>
+
+  <p class="intro">
+    قيادة تعمل من أجل تطوير الرياضة النسائية
+    في الجمهورية الإسلامية الموريتانية.
+  </p>
+
   <div class="cards">
-    <div class="card person"><h3>الرئيسة</h3><p>ميمونة محمد يحظيه</p></div>
-    <div class="card person"><h3>نائبة الرئيسة</h3><p>عائشة الفاضل</p></div>
-    <div class="card person"><h3>الأمينة العامة</h3><p>ميمونة محمد يحظيه</p></div>
+    <div class="card person">
+      <h3>الرئيسة</h3>
+      <p>فاطمة محمد</p>
+    </div>
+
+    <div class="card person">
+      <h3>نائبة الرئيسة</h3>
+      <p>عائشة الفاضل</p>
+    </div>
+
+    <div class="card person">
+      <h3>الأمينة العامة</h3>
+      <p>ميمونة محمد يحظيه</p>
+    </div>
+
+    <div class="card person">
+      <h3>نائبة الأمينة العامة</h3>
+      <p>زينب المصطفى</p>
+    </div>
+
+    <div class="card person">
+      <h3>أمينة الصندوق</h3>
+      <p>عائشة محمدن عبد الله</p>
+    </div>
+
+    <div class="card person">
+      <h3>عضوة</h3>
+      <p>أم الفضل الفاضل</p>
+    </div>
+
+    <div class="card person">
+      <h3>عضوة</h3>
+      <p>ميمات الشيخ الولي</p>
+    </div>
+
+    <div class="card person">
+      <h3>عضوة</h3>
+      <p>سلهم حرمة</p>
+    </div>
+
+    <div class="card person">
+      <h3>عضوة</h3>
+      <p>خديجة گلاي</p>
+    </div>
   </div>
-  <p class="small">يمكن إضافة بقية أعضاء المكتب التنفيذي وصورهم بعد استكمال إعداد الموقع.</p>
+
+  <p class="small">
+    يرجى مراجعة الأسماء والمسميات قبل اعتمادها رسميًا على الموقع.
+  </p>
 </section>
 
 <section id="news">
   <h2>الأخبار والأنشطة | Actualités</h2>
+
   <div class="cards">
-    <div class="card"><h3>أخبار الجمعية</h3><p>ستُنشر هنا أخبار الجمعية وأنشطتها وفعالياتها الرسمية.</p></div>
-    <div class="card"><h3>الفعاليات الرياضية</h3><p>تابعوا هنا إعلانات الفعاليات والمبادرات الرياضية النسائية.</p></div>
-    <div class="card"><h3>الإعلانات الرسمية</h3><p>سيتم نشر البلاغات والإعلانات والمستجدات الخاصة بالجمعية.</p></div>
+    <div class="card">
+      <h3>أخبار الجمعية</h3>
+      <p>
+        ستُنشر هنا أخبار الجمعية وأنشطتها
+        وفعالياتها الرسمية.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>الفعاليات الرياضية</h3>
+      <p>
+        تابعوا إعلانات الفعاليات والمبادرات
+        الرياضية النسائية.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>الإعلانات الرسمية</h3>
+      <p>
+        سيتم نشر البلاغات والإعلانات والمستجدات
+        الخاصة بالجمعية.
+      </p>
+    </div>
   </div>
 </section>
 
 <section id="documents">
   <h2>الوثائق الرسمية | Documents officiels</h2>
+
   <div class="card">
-    <p>يمكن تخصيص هذا القسم لنشر النظام الأساسي، ومحاضر الجمعيات العامة، والتقارير، والوثائق الرسمية للجمعية.</p>
-    <p class="small">Les documents officiels seront ajoutés dans cette rubrique après leur mise en ligne.</p>
+    <p>
+      يخصص هذا القسم لنشر النظام الأساسي،
+      ومحاضر الجمعيات العامة، والتقارير،
+      والوثائق الرسمية للجمعية.
+    </p>
+
+    <p dir="ltr">
+      Cette rubrique est destinée aux statuts,
+      procès-verbaux, rapports et documents officiels
+      de l’association.
+    </p>
+
+    <p class="small">
+      ستضاف روابط الوثائق عند رفع الملفات الرسمية.
+    </p>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <h2>اتصل بنا | Contact</h2>
-  <p>الجمهورية الإسلامية الموريتانية — نواكشوط، تفرغ زينة</p>
-  <p>République Islamique de Mauritanie — Nouakchott, Tevragh-Zeina</p>
-  <p>البريد الإلكتروني: يُضاف بعد تحديد البريد الرسمي</p>
-  <p>الهاتف: يُضاف بعد تحديد رقم الاتصال الرسمي</p>
+
+  <p>
+    الجمهورية الإسلامية الموريتانية — نواكشوط، تفرغ زينة
+  </p>
+
+  <p dir="ltr">
+    République Islamique de Mauritanie — Nouakchott, Tevragh-Zeina
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">📧</div>
+      <h3>البريد الإلكتروني الرسمي</h3>
+      <p>E-mail officiel</p>
+      <p>
+        <a href="mailto:ampsf2064@gmail.com" dir="ltr">
+          ampsf2064@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📞</div>
+      <h3>رقم الهاتف الرسمي</h3>
+      <p>Téléphone officiel</p>
+      <p>
+        <a href="tel:+22230620606" class="contact-detail">
+          +222 30 62 06 06
+        </a>
+      </p>
+    </div>
+  </div>
 </section>
+
 </main>
 
 <footer>
-  <div>الجمعية الموريتانية للرياضة النسائية | AMPSF</div>
-  <div>© <span id="year">2026</span> جميع الحقوق محفوظة</div>
+  <p class="footer-brand">AMPSF</p>
+  <p>الجمعية الموريتانية للرياضة النسائية</p>
+  <p>Association Mauritanienne pour la Promotion du Sport Féminin</p>
+  <p>© <span id="year">2026</span> جميع الحقوق محفوظة</p>
 </footer>
+
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
+
 </body>
 </html>
